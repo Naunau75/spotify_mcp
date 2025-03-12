@@ -1,6 +1,7 @@
 import sys
 import json
-from typing import Optional
+import traceback
+from typing import Optional, Any
 
 import mcp.types as types
 from mcp.server import Server  # , stdio_server
@@ -19,13 +20,47 @@ def setup_logger():
         def error(self, message):
             print(f"[ERROR] {message}", file=sys.stderr)
 
+        def debug(self, message):
+            print(f"[DEBUG] {message}", file=sys.stderr)
+
+        def trace(self, message, obj=None):
+            print(f"[TRACE] {message}", file=sys.stderr)
+            if obj:
+                print(f"[TRACE] Object: {repr(obj)}", file=sys.stderr)
+
+        def exception(self, message):
+            print(f"[EXCEPTION] {message}", file=sys.stderr)
+            print(f"[EXCEPTION] {traceback.format_exc()}", file=sys.stderr)
+
     return Logger()
+
+
+def debug_object(obj: Any, name: str = "Object") -> str:
+    """Helper function to debug print objects"""
+    if obj is None:
+        return f"{name}: None"
+    try:
+        return f"{name} ({type(obj).__name__}): {repr(obj)}"
+    except Exception as e:
+        return f"{name}: <Error getting representation: {str(e)}>"
 
 
 server = Server("spotify-mcp")
 options = server.create_initialization_options()
 logger = setup_logger()
-spotify_client = spotify_api.Client(logger)
+
+# Debug log startup information
+logger.debug(f"Server initialized with options: {debug_object(options, 'options')}")
+logger.debug(f"Python version: {sys.version}")
+logger.debug(f"Arguments: {debug_object(sys.argv, 'sys.argv')}")
+
+try:
+    logger.debug("Initializing Spotify client")
+    spotify_client = spotify_api.Client(logger)
+    logger.debug("Spotify client initialized successfully")
+except Exception as e:
+    logger.exception(f"Failed to initialize Spotify client: {str(e)}")
+    raise
 
 
 class ToolModel(BaseModel):
@@ -94,6 +129,22 @@ class Search(ToolModel):
     )
 
 
+# Nouvelle classe pour l'historique des artistes les plus écoutés
+class TopItems(ToolModel):
+    """Get the user's top artists or tracks based on calculated affinity."""
+
+    item_type: str = Field(
+        description="Type of items to retrieve ('artists' or 'tracks')"
+    )
+    time_range: Optional[str] = Field(
+        default="long_term",
+        description="Time period over which to retrieve top items: 'long_term' (~ 1 year), 'medium_term' (~ 6 months), or 'short_term' (~ 4 weeks)",
+    )
+    limit: Optional[int] = Field(
+        default=10, description="Number of items to retrieve (max 50)"
+    )
+
+
 @server.list_prompts()
 async def handle_list_prompts() -> list[types.Prompt]:
     return []
@@ -108,14 +159,17 @@ async def handle_list_resources() -> list[types.Resource]:
 async def handle_list_tools() -> list[types.Tool]:
     """List available tools."""
     logger.info("Listing available tools")
+    logger.debug("handle_list_tools called")
     # await server.request_context.session.send_notification("are you recieving this notification?")
     tools = [
         Playback.as_tool(),
         Search.as_tool(),
         Queue.as_tool(),
         GetInfo.as_tool(),
+        TopItems.as_tool(),
     ]
     logger.info(f"Available tools: {[tool.name for tool in tools]}")
+    logger.debug(f"Returning {len(tools)} tools")
     return tools
 
 
@@ -230,6 +284,20 @@ async def handle_call_tool(
                     types.TextContent(type="text", text=json.dumps(item_info, indent=2))
                 ]
 
+            case "TopItems":
+                logger.info(f"Getting top items with arguments: {arguments}")
+                item_type = arguments.get("item_type", "artists")
+                time_range = arguments.get("time_range", "long_term")
+                limit = arguments.get("limit", 10)
+
+                top_items = spotify_client.get_top_items(
+                    item_type=item_type, time_range=time_range, limit=limit
+                )
+
+                return [
+                    types.TextContent(type="text", text=json.dumps(top_items, indent=2))
+                ]
+
             case _:
                 error_msg = f"Unknown tool: {name}"
                 logger.error(error_msg)
@@ -251,9 +319,37 @@ async def handle_call_tool(
 
 
 async def main():
+    logger.debug("====== main() function started ======")
     try:
+        logger.debug("Initializing stdio server")
         async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):
-            await server.run(read_stream, write_stream, options)
+            logger.debug(
+                f"stdio server initialized: read_stream={debug_object(read_stream, 'read_stream')}, write_stream={debug_object(write_stream, 'write_stream')}"
+            )
+            try:
+                logger.debug("About to call server.run()")
+                await server.run(read_stream, write_stream, options)
+                logger.debug("server.run() completed normally")
+            except Exception as e:
+                logger.exception(f"Error in server.run(): {str(e)}")
+                raise
+        logger.debug("stdio server context exited")
     except Exception as e:
-        logger.error(f"Server error occurred: {str(e)}", exc_info=True)
+        logger.exception(f"Error in main(): {str(e)}")
         raise
+    finally:
+        logger.debug("====== main() function exiting ======")
+
+
+if __name__ == "__main__":
+    logger.debug("Module executed directly")
+    import asyncio
+
+    logger.debug("Starting asyncio.run(main())")
+    try:
+        asyncio.run(main())
+        logger.debug("asyncio.run(main()) completed successfully")
+    except Exception as e:
+        logger.exception(f"Uncaught exception in asyncio.run(main()): {str(e)}")
+        sys.exit(1)
+    logger.debug("Script exiting")
