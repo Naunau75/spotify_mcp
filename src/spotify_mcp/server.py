@@ -145,6 +145,26 @@ class TopItems(ToolModel):
     )
 
 
+class PlaylistCreator(ToolModel):
+    """Création et gestion des playlists Spotify"""
+
+    action: str = Field(description="Action : 'create', 'add_tracks', 'create_and_add'")
+    playlist_details: Optional[dict] = Field(
+        description={
+            "name": "Nom de la playlist",
+            "description": "Description de la playlist",
+            "public": "Visibilité (true/false)",
+            "collaborative": "Playlist collaborative (true/false)",
+        }
+    )
+    tracks: Optional[list] = Field(
+        description="Liste des URIs Spotify des titres à ajouter"
+    )
+    playlist_id: Optional[str] = Field(
+        description="ID de la playlist (requis pour add_tracks)"
+    )
+
+
 @server.list_prompts()
 async def handle_list_prompts() -> list[types.Prompt]:
     return []
@@ -167,6 +187,7 @@ async def handle_list_tools() -> list[types.Tool]:
         Queue.as_tool(),
         GetInfo.as_tool(),
         TopItems.as_tool(),
+        PlaylistCreator.as_tool(),
     ]
     logger.info(f"Available tools: {[tool.name for tool in tools]}")
     logger.debug(f"Returning {len(tools)} tools")
@@ -297,6 +318,84 @@ async def handle_call_tool(
                 return [
                     types.TextContent(type="text", text=json.dumps(top_items, indent=2))
                 ]
+
+            case "PlaylistCreator":
+                logger.info(f"Handling playlist operation with arguments: {arguments}")
+                action = arguments.get("action")
+
+                match action:
+                    case "create":
+                        logger.info("Creating a new playlist")
+                        details = arguments.get("playlist_details", {})
+                        new_playlist = spotify_client.create_playlist(
+                            name=details.get("name", "Nouvelle Playlist"),
+                            description=details.get("description", ""),
+                            public=details.get("public", True),
+                            collaborative=details.get("collaborative", False),
+                        )
+                        return [
+                            types.TextContent(
+                                type="text",
+                                text=f"Playlist créée avec succès! ID: {new_playlist['id']}",
+                            )
+                        ]
+
+                    case "add_tracks":
+                        logger.info("Adding tracks to an existing playlist")
+                        playlist_id = arguments.get("playlist_id")
+                        tracks = arguments.get("tracks", [])
+
+                        if not playlist_id:
+                            logger.error("playlist_id is required for add_tracks")
+                            return [
+                                types.TextContent(
+                                    type="text",
+                                    text="playlist_id is required for add_tracks",
+                                )
+                            ]
+
+                        result = spotify_client.add_tracks_to_playlist(
+                            playlist_id=playlist_id, tracks=tracks
+                        )
+                        return [
+                            types.TextContent(
+                                type="text",
+                                text=f"Titres ajoutés avec succès à la playlist!",
+                            )
+                        ]
+
+                    case "create_and_add":
+                        logger.info(
+                            "Creating a new playlist and adding tracks immediately"
+                        )
+                        details = arguments.get("playlist_details", {})
+                        tracks = arguments.get("tracks", [])
+
+                        # Création de la playlist
+                        new_playlist = spotify_client.create_playlist(
+                            name=details.get("name", "Nouvelle Playlist"),
+                            description=details.get("description", ""),
+                            public=details.get("public", True),
+                            collaborative=details.get("collaborative", False),
+                        )
+
+                        # Ajout des titres
+                        if tracks:
+                            spotify_client.add_tracks_to_playlist(
+                                playlist_id=new_playlist["id"], tracks=tracks
+                            )
+
+                        return [
+                            types.TextContent(
+                                type="text",
+                                text=f"Playlist créée et titres ajoutés avec succès! ID: {new_playlist['id']}",
+                            )
+                        ]
+
+                    case _:
+                        error_msg = f"Unknown playlist action: {action}. Supported actions are: create, add_tracks, and create_and_add."
+                        logger.error(error_msg)
+                        return [types.TextContent(type="text", text=error_msg)]
 
             case _:
                 error_msg = f"Unknown tool: {name}"
