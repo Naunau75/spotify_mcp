@@ -148,7 +148,7 @@ class TopItems(ToolModel):
 class PlaylistCreator(ToolModel):
     """Création et gestion des playlists Spotify"""
 
-    action: str = Field(description="Action : 'create', 'add_tracks', 'create_and_add'")
+    action: str = Field(description="Action : 'create', 'search_and_add'")  # Simplifié
     playlist_details: Optional[dict] = Field(
         description={
             "name": "Nom de la playlist",
@@ -157,11 +157,12 @@ class PlaylistCreator(ToolModel):
             "collaborative": "Playlist collaborative (true/false)",
         }
     )
-    tracks: Optional[list] = Field(
-        description="Liste des URIs Spotify des titres à ajouter"
-    )
     playlist_id: Optional[str] = Field(
-        description="ID de la playlist (requis pour add_tracks)"
+        description="ID de la playlist (requis pour search_and_add)"
+    )
+    search_query: Optional[str] = Field(description="Recherche de titres à ajouter")
+    limit: Optional[int] = Field(
+        default=10, description="Nombre maximum de résultats de recherche"
     )
 
 
@@ -327,12 +328,31 @@ async def handle_call_tool(
                     case "create":
                         logger.info("Creating a new playlist")
                         details = arguments.get("playlist_details", {})
-                        new_playlist = spotify_client.create_playlist(
-                            name=details.get("name", "Nouvelle Playlist"),
-                            description=details.get("description", ""),
+
+                        # Si details est une chaîne JSON, la convertir en dictionnaire
+                        if isinstance(details, str):
+                            try:
+                                details = json.loads(details)
+                            except json.JSONDecodeError as e:
+                                raise ValueError(
+                                    f"Format invalide pour playlist_details: {e}"
+                                )
+
+                        if "name" not in details:
+                            raise ValueError("Le nom de la playlist est requis")
+
+                        # Récupérer l'ID de l'utilisateur courant
+                        user_id = spotify_client.sp.current_user()["id"]
+
+                        # Créer la playlist en utilisant la méthode correcte de spotipy
+                        new_playlist = spotify_client.sp.user_playlist_create(
+                            user=user_id,
+                            name=details.get("name"),
                             public=details.get("public", True),
                             collaborative=details.get("collaborative", False),
+                            description=details.get("description", ""),
                         )
+
                         return [
                             types.TextContent(
                                 type="text",
@@ -340,60 +360,72 @@ async def handle_call_tool(
                             )
                         ]
 
-                    case "add_tracks":
-                        logger.info("Adding tracks to an existing playlist")
+                    case "search_and_add":
+                        logger.info("Searching tracks and adding to playlist")
                         playlist_id = arguments.get("playlist_id")
-                        tracks = arguments.get("tracks", [])
+                        search_query = arguments.get("search_query")
+                        limit = arguments.get("limit", 10)
 
                         if not playlist_id:
-                            logger.error("playlist_id is required for add_tracks")
+                            raise ValueError(
+                                "playlist_id est requis pour search_and_add"
+                            )
+                        if not search_query:
+                            raise ValueError(
+                                "search_query est requis pour search_and_add"
+                            )
+
+                        # Recherche des tracks
+                        search_results = spotify_client.search(
+                            query=search_query, qtype="track", limit=limit
+                        )
+
+                        # Extraction des URIs
+                        uris = []
+                        tracks_info = []
+                        if (
+                            "tracks" in search_results
+                            and "items" in search_results["tracks"]
+                        ):
+                            for track in search_results["tracks"]["items"]:
+                                uris.append(track["uri"])
+                                tracks_info.append(
+                                    {
+                                        "name": track["name"],
+                                        "artist": track["artists"][0]["name"],
+                                        "uri": track["uri"],
+                                    }
+                                )
+
+                        # Ajout des tracks à la playlist
+                        if uris:
+                            spotify_client.add_tracks_to_playlist(
+                                playlist_id=playlist_id, tracks=uris
+                            )
+
                             return [
                                 types.TextContent(
                                     type="text",
-                                    text="playlist_id is required for add_tracks",
+                                    text=json.dumps(
+                                        {
+                                            "message": "Titres ajoutés avec succès à la playlist!",
+                                            "added_tracks": tracks_info,
+                                            "count": len(uris),
+                                        },
+                                        indent=2,
+                                    ),
+                                )
+                            ]
+                        else:
+                            return [
+                                types.TextContent(
+                                    type="text",
+                                    text="Aucun titre trouvé pour cette recherche.",
                                 )
                             ]
 
-                        result = spotify_client.add_tracks_to_playlist(
-                            playlist_id=playlist_id, tracks=tracks
-                        )
-                        return [
-                            types.TextContent(
-                                type="text",
-                                text=f"Titres ajoutés avec succès à la playlist!",
-                            )
-                        ]
-
-                    case "create_and_add":
-                        logger.info(
-                            "Creating a new playlist and adding tracks immediately"
-                        )
-                        details = arguments.get("playlist_details", {})
-                        tracks = arguments.get("tracks", [])
-
-                        # Création de la playlist
-                        new_playlist = spotify_client.create_playlist(
-                            name=details.get("name", "Nouvelle Playlist"),
-                            description=details.get("description", ""),
-                            public=details.get("public", True),
-                            collaborative=details.get("collaborative", False),
-                        )
-
-                        # Ajout des titres
-                        if tracks:
-                            spotify_client.add_tracks_to_playlist(
-                                playlist_id=new_playlist["id"], tracks=tracks
-                            )
-
-                        return [
-                            types.TextContent(
-                                type="text",
-                                text=f"Playlist créée et titres ajoutés avec succès! ID: {new_playlist['id']}",
-                            )
-                        ]
-
                     case _:
-                        error_msg = f"Unknown playlist action: {action}. Supported actions are: create, add_tracks, and create_and_add."
+                        error_msg = f"Action inconnue: {action}. Actions supportées: create, search_and_add"
                         logger.error(error_msg)
                         return [types.TextContent(type="text", text=error_msg)]
 

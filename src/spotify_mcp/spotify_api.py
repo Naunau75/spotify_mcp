@@ -18,16 +18,17 @@ REDIRECT_URI = os.getenv("SPOTIFY_REDIRECT_URI")
 SCOPES = [
     "user-read-currently-playing",
     "user-read-playback-state",
-    "user-read-currently-playing",  # spotify connect
+    "user-modify-playback-state",
+    "user-read-currently-playing",
+    "user-top-read",
+    "playlist-modify-public",
+    "playlist-modify-private",
     "app-remote-control",
     "streaming",  # playback
     "playlist-read-private",
     "playlist-read-collaborative",
-    "playlist-modify-private",
-    "playlist-modify-public",
     # playlists
     "user-read-playback-position",
-    "user-top-read",
     "user-read-recently-played",  # listening history
     "user-library-modify",
     "user-library-read",  # library
@@ -39,7 +40,7 @@ class Client:
         """Initialize Spotify client with necessary permissions"""
         self.logger = logger
 
-        scope = "user-library-read,user-read-playback-state,user-modify-playback-state,user-read-currently-playing,user-top-read"
+        scope = "user-library-read,user-read-playback-state,user-modify-playback-state,user-read-currently-playing,user-top-read,playlist-modify-public,playlist-modify-private"
 
         try:
             self.sp = spotipy.Spotify(
