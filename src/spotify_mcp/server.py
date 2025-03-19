@@ -105,13 +105,7 @@ class ToolModel(BaseModel):
         )
 
 
-class Playback(ToolModel):
-    """Manages the current playback with the following actions:
-    - get: Get information about user's current track.
-    - start: Starts playing new item or resumes current playback if called with no uri.
-    - pause: Pauses current playback.
-    - skip: Skips current track.
-    """
+class Play(ToolModel):
 
     action: str = Field(
         description="Action to perform: 'get', 'start', 'pause' or 'skip'."
@@ -135,8 +129,8 @@ class Queue(ToolModel):
     )
 
 
-class GetInfo(ToolModel):
-    """Get detailed information about a Spotify item (track, album, artist, or playlist)."""
+class Info(ToolModel):
+    """Get information about an item (track, album, artist, or playlist)."""
 
     item_uri: str = Field(
         description="URI of the item to get information about. "
@@ -215,10 +209,10 @@ async def handle_list_tools() -> list[types.Tool]:
     global_logger.debug("handle_list_tools called")
     # await server.request_context.session.send_notification("are you recieving this notification?")
     tools = [
-        Playback.as_tool(),
+        Play.as_tool(),
         Search.as_tool(),
         Queue.as_tool(),
-        GetInfo.as_tool(),
+        Info.as_tool(),
         TopItems.as_tool(),
         PlaylistCreator.as_tool(),
     ]
@@ -236,7 +230,7 @@ async def handle_call_tool(
     assert name[:7] == "Spotify", f"Unknown tool: {name}"
     try:
         match name[7:]:
-            case "Playback":
+            case "Play":
                 action = arguments.get("action")
                 match action:
                     case "get":
@@ -335,7 +329,7 @@ async def handle_call_tool(
                             )
                         ]
 
-            case "GetInfo":
+            case "Info":
                 global_logger.info(f"Getting item info with arguments: {arguments}")
                 item_info = spotify_client.get_info(item_uri=arguments.get("item_uri"))
                 return [
