@@ -39,6 +39,7 @@ class Client:
     def __init__(self, logger: logging.Logger):
         """Initialize Spotify client with necessary permissions"""
         self.logger = logger
+        self.logger.info("Initializing Spotify client with logger")
 
         scope = "user-library-read,user-read-playback-state,user-modify-playback-state,user-read-currently-playing,user-top-read,playlist-modify-public,playlist-modify-private"
 
@@ -334,3 +335,23 @@ class Client:
 
     def set_volume(self, volume_percent):
         self.sp.volume(volume_percent)
+
+    def get_track_uri_from_title(self, track_title, limit=1):
+        """
+        Recherche une chanson par son titre et retourne son URI Spotify
+
+        Parameters:
+            - track_title: le titre de la chanson à rechercher
+            - limit: nombre de résultats (par défaut 1 pour obtenir le premier match)
+
+        Returns:
+            - URI de la chanson ou None si rien n'est trouvé
+        """
+        try:
+            results = self.sp.search(q=track_title, type="track", limit=limit)
+            if results["tracks"]["items"]:
+                return results["tracks"]["items"][0]["uri"]
+            return None
+        except Exception as e:
+            self.logger.error(f"Erreur lors de la recherche du titre: {str(e)}")
+            return None

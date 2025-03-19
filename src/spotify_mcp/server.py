@@ -14,23 +14,53 @@ from spotify_mcp import spotify_api
 
 def setup_logger():
     class Logger:
+        def __init__(self):
+            # Créer un fichier de log avec le chemin complet
+            import os
+
+            log_dir = os.path.dirname(os.path.abspath(__file__))
+            self.log_file = open(
+                os.path.join(log_dir, "spotify_mcp.log"), "a", encoding="utf-8"
+            )
+
         def info(self, message):
-            print(f"[INFO] {message}", file=sys.stderr)
+            log_message = f"[INFO] {message}"
+            print(log_message, file=self.log_file)
+            self.log_file.flush()
+            print(log_message)  # Affiche aussi dans le terminal
 
         def error(self, message):
-            print(f"[ERROR] {message}", file=sys.stderr)
+            log_message = f"[ERROR] {message}"
+            print(log_message, file=self.log_file)
+            self.log_file.flush()
+            print(log_message)
 
         def debug(self, message):
-            print(f"[DEBUG] {message}", file=sys.stderr)
+            log_message = f"[DEBUG] {message}"
+            print(log_message, file=self.log_file)
+            self.log_file.flush()
+            print(log_message)
 
         def trace(self, message, obj=None):
-            print(f"[TRACE] {message}", file=sys.stderr)
+            log_message = f"[TRACE] {message}"
+            print(log_message, file=self.log_file)
             if obj:
-                print(f"[TRACE] Object: {repr(obj)}", file=sys.stderr)
+                print(f"[TRACE] Object: {repr(obj)}", file=self.log_file)
+            self.log_file.flush()
+            print(log_message)
+            if obj:
+                print(f"[TRACE] Object: {repr(obj)}")
 
         def exception(self, message):
-            print(f"[EXCEPTION] {message}", file=sys.stderr)
-            print(f"[EXCEPTION] {traceback.format_exc()}", file=sys.stderr)
+            log_message = f"[EXCEPTION] {message}\n{traceback.format_exc()}"
+            print(log_message, file=self.log_file)
+            self.log_file.flush()
+            print(log_message)
+
+        def __del__(self):
+            # Fermer le fichier de log quand l'objet est détruit
+            if hasattr(self, "log_file"):
+                self.log_file.close()
 
     return Logger()
 
@@ -47,19 +77,21 @@ def debug_object(obj: Any, name: str = "Object") -> str:
 
 server = Server("spotify-mcp")
 options = server.create_initialization_options()
-logger = setup_logger()
+global_logger = setup_logger()
 
 # Debug log startup information
-logger.debug(f"Server initialized with options: {debug_object(options, 'options')}")
-logger.debug(f"Python version: {sys.version}")
-logger.debug(f"Arguments: {debug_object(sys.argv, 'sys.argv')}")
+global_logger.debug(
+    f"Server initialized with options: {debug_object(options, 'options')}"
+)
+global_logger.debug(f"Python version: {sys.version}")
+global_logger.debug(f"Arguments: {debug_object(sys.argv, 'sys.argv')}")
 
 try:
-    logger.debug("Initializing Spotify client")
-    spotify_client = spotify_api.Client(logger)
-    logger.debug("Spotify client initialized successfully")
+    global_logger.debug("Initializing Spotify client")
+    spotify_client = spotify_api.Client(global_logger)
+    global_logger.debug("Spotify client initialized successfully")
 except Exception as e:
-    logger.exception(f"Failed to initialize Spotify client: {str(e)}")
+    global_logger.exception(f"Failed to initialize Spotify client: {str(e)}")
     raise
 
 
@@ -179,8 +211,8 @@ async def handle_list_resources() -> list[types.Resource]:
 @server.list_tools()
 async def handle_list_tools() -> list[types.Tool]:
     """List available tools."""
-    logger.info("Listing available tools")
-    logger.debug("handle_list_tools called")
+    global_logger.info("Listing available tools")
+    global_logger.debug("handle_list_tools called")
     # await server.request_context.session.send_notification("are you recieving this notification?")
     tools = [
         Playback.as_tool(),
@@ -190,8 +222,8 @@ async def handle_list_tools() -> list[types.Tool]:
         TopItems.as_tool(),
         PlaylistCreator.as_tool(),
     ]
-    logger.info(f"Available tools: {[tool.name for tool in tools]}")
-    logger.debug(f"Returning {len(tools)} tools")
+    global_logger.info(f"Available tools: {[tool.name for tool in tools]}")
+    global_logger.debug(f"Returning {len(tools)} tools")
     return tools
 
 
@@ -200,7 +232,7 @@ async def handle_call_tool(
     name: str, arguments: dict | None
 ) -> list[types.TextContent | types.ImageContent | types.EmbeddedResource]:
     """Handle tool execution requests."""
-    logger.info(f"Tool called: {name} with arguments: {arguments}")
+    global_logger.info(f"Tool called: {name} with arguments: {arguments}")
     assert name[:7] == "Spotify", f"Unknown tool: {name}"
     try:
         match name[7:]:
@@ -208,10 +240,10 @@ async def handle_call_tool(
                 action = arguments.get("action")
                 match action:
                     case "get":
-                        logger.info("Attempting to get current track")
+                        global_logger.info("Attempting to get current track")
                         curr_track = spotify_client.get_current_track()
                         if curr_track:
-                            logger.info(
+                            global_logger.info(
                                 f"Current track retrieved: {curr_track.get('name', 'Unknown')}"
                             )
                             return [
@@ -219,27 +251,29 @@ async def handle_call_tool(
                                     type="text", text=json.dumps(curr_track, indent=2)
                                 )
                             ]
-                        logger.info("No track currently playing")
+                        global_logger.info("No track currently playing")
                         return [
                             types.TextContent(type="text", text="No track playing.")
                         ]
                     case "start":
-                        logger.info(f"Starting playback with arguments: {arguments}")
+                        global_logger.info(
+                            f"Starting playback with arguments: {arguments}"
+                        )
                         spotify_client.start_playback(
                             spotify_uri=arguments.get("spotify_uri")
                         )
-                        logger.info("Playback started successfully")
+                        global_logger.info("Playback started successfully")
                         return [
                             types.TextContent(type="text", text="Playback starting.")
                         ]
                     case "pause":
-                        logger.info("Attempting to pause playback")
+                        global_logger.info("Attempting to pause playback")
                         spotify_client.pause_playback()
-                        logger.info("Playback paused successfully")
+                        global_logger.info("Playback paused successfully")
                         return [types.TextContent(type="text", text="Playback paused.")]
                     case "skip":
                         num_skips = int(arguments.get("num_skips", 1))
-                        logger.info(f"Skipping {num_skips} tracks.")
+                        global_logger.info(f"Skipping {num_skips} tracks.")
                         spotify_client.skip_track(n=num_skips)
                         return [
                             types.TextContent(
@@ -248,13 +282,13 @@ async def handle_call_tool(
                         ]
 
             case "Search":
-                logger.info(f"Performing search with arguments: {arguments}")
+                global_logger.info(f"Performing search with arguments: {arguments}")
                 search_results = spotify_client.search(
                     query=arguments.get("query", ""),
                     qtype=arguments.get("qtype", "track"),
                     limit=arguments.get("limit", 10),
                 )
-                logger.info("Search completed successfully.")
+                global_logger.info("Search completed successfully.")
                 return [
                     types.TextContent(
                         type="text", text=json.dumps(search_results, indent=2)
@@ -262,14 +296,16 @@ async def handle_call_tool(
                 ]
 
             case "Queue":
-                logger.info(f"Queue operation with arguments: {arguments}")
+                global_logger.info(f"Queue operation with arguments: {arguments}")
                 action = arguments.get("action")
 
                 match action:
                     case "add":
                         track_id = arguments.get("track_id")
                         if not track_id:
-                            logger.error("track_id is required for add to queue.")
+                            global_logger.error(
+                                "track_id is required for add to queue."
+                            )
                             return [
                                 types.TextContent(
                                     type="text",
@@ -300,14 +336,14 @@ async def handle_call_tool(
                         ]
 
             case "GetInfo":
-                logger.info(f"Getting item info with arguments: {arguments}")
+                global_logger.info(f"Getting item info with arguments: {arguments}")
                 item_info = spotify_client.get_info(item_uri=arguments.get("item_uri"))
                 return [
                     types.TextContent(type="text", text=json.dumps(item_info, indent=2))
                 ]
 
             case "TopItems":
-                logger.info(f"Getting top items with arguments: {arguments}")
+                global_logger.info(f"Getting top items with arguments: {arguments}")
                 item_type = arguments.get("item_type", "artists")
                 time_range = arguments.get("time_range", "long_term")
                 limit = arguments.get("limit", 10)
@@ -321,12 +357,14 @@ async def handle_call_tool(
                 ]
 
             case "PlaylistCreator":
-                logger.info(f"Handling playlist operation with arguments: {arguments}")
+                global_logger.info(
+                    f"Handling playlist operation with arguments: {arguments}"
+                )
                 action = arguments.get("action")
 
                 match action:
                     case "create":
-                        logger.info("Creating a new playlist")
+                        global_logger.info("Creating a new playlist")
                         details = arguments.get("playlist_details", {})
 
                         # Si details est une chaîne JSON, la convertir en dictionnaire
@@ -361,82 +399,112 @@ async def handle_call_tool(
                         ]
 
                     case "search_and_add":
-                        logger.info("Searching tracks and adding to playlist")
+                        global_logger.info("Searching tracks and adding to playlist")
                         playlist_id = arguments.get("playlist_id")
                         search_query = arguments.get("search_query")
                         limit = arguments.get("limit", 10)
 
-                        if not playlist_id:
-                            raise ValueError(
-                                "playlist_id est requis pour search_and_add"
-                            )
-                        if not search_query:
-                            raise ValueError(
-                                "search_query est requis pour search_and_add"
-                            )
-
-                        # Recherche des tracks
-                        search_results = spotify_client.search(
-                            query=search_query, qtype="track", limit=limit
+                        global_logger.info(
+                            f"Arguments reçus: {json.dumps(arguments, indent=2)}"
                         )
 
-                        # Extraction des URIs
-                        uris = []
-                        tracks_info = []
-                        if (
-                            "tracks" in search_results
-                            and "items" in search_results["tracks"]
-                        ):
-                            for track in search_results["tracks"]["items"]:
-                                uris.append(track["uri"])
-                                tracks_info.append(
-                                    {
-                                        "name": track["name"],
-                                        "artist": track["artists"][0]["name"],
-                                        "uri": track["uri"],
-                                    }
+                        # Vérifier si l'ID de playlist est un nom plutôt qu'un ID
+                        try:
+                            # Rechercher d'abord la playlist par son nom si ce n'est pas un ID valide
+                            if (
+                                not playlist_id.startswith("spotify:playlist:")
+                                and not len(playlist_id) == 22
+                            ):
+                                playlists = spotify_client.sp.current_user_playlists()
+                                for playlist in playlists["items"]:
+                                    if playlist["name"] == playlist_id:
+                                        playlist_id = playlist["id"]
+                                        global_logger.info(
+                                            f"Playlist trouvée par nom, ID: {playlist_id}"
+                                        )
+                                        break
+                                else:
+                                    raise ValueError(
+                                        f"Playlist non trouvée : {playlist_id}"
+                                    )
+
+                            # Recherche du titre
+                            global_logger.info(f"Recherche du titre : {search_query}")
+                            sp_results = spotify_client.sp.search(
+                                q=search_query,
+                                type="track",
+                                limit=1,
+                                market="FR",  # Ajout du marché pour de meilleurs résultats
+                            )
+
+                            global_logger.info(
+                                f"Résultats de recherche reçus: {bool(sp_results)}"
+                            )
+                            global_logger.debug(
+                                f"Résultats détaillés: {json.dumps(sp_results, indent=2)}"
+                            )
+
+                            if not sp_results or not sp_results.get("tracks", {}).get(
+                                "items"
+                            ):
+                                raise ValueError(
+                                    f"Aucun titre trouvé pour : {search_query}"
                                 )
 
-                        # Ajout des tracks à la playlist
-                        if uris:
-                            spotify_client.add_tracks_to_playlist(
-                                playlist_id=playlist_id, tracks=uris
+                            track = sp_results["tracks"]["items"][0]
+                            track_uri = track["uri"]
+                            global_logger.info(
+                                f"Titre trouvé : {track['name']} ({track_uri})"
                             )
+
+                            # Ajouter le titre à la playlist
+                            add_result = spotify_client.sp.playlist_add_items(
+                                playlist_id=playlist_id, items=[track_uri]
+                            )
+                            global_logger.info(f"Résultat de l'ajout : {add_result}")
 
                             return [
                                 types.TextContent(
                                     type="text",
                                     text=json.dumps(
                                         {
-                                            "message": "Titres ajoutés avec succès à la playlist!",
-                                            "added_tracks": tracks_info,
-                                            "count": len(uris),
+                                            "message": "Titre ajouté avec succès !",
+                                            "track": {
+                                                "name": track["name"],
+                                                "artist": track["artists"][0]["name"],
+                                                "uri": track_uri,
+                                            },
                                         },
                                         indent=2,
                                     ),
                                 )
                             ]
-                        else:
+
+                        except Exception as e:
+                            error_details = (
+                                f"Erreur détaillée : {str(e)}\n{traceback.format_exc()}"
+                            )
+                            global_logger.error(error_details)
                             return [
                                 types.TextContent(
                                     type="text",
-                                    text="Aucun titre trouvé pour cette recherche.",
+                                    text=f"Erreur lors de l'opération : {str(e)}",
                                 )
                             ]
 
                     case _:
                         error_msg = f"Action inconnue: {action}. Actions supportées: create, search_and_add"
-                        logger.error(error_msg)
+                        global_logger.error(error_msg)
                         return [types.TextContent(type="text", text=error_msg)]
 
             case _:
                 error_msg = f"Unknown tool: {name}"
-                logger.error(error_msg)
+                global_logger.error(error_msg)
                 raise ValueError(error_msg)
 
     except SpotifyException as se:
         error_msg = f"Spotify Client error occurred: {str(se)}"
-        logger.error(error_msg)
+        global_logger.error(error_msg)
         return [
             types.TextContent(
                 type="text",
@@ -445,42 +513,42 @@ async def handle_call_tool(
         ]
     except Exception as e:
         error_msg = f"Unexpected error occurred: {str(e)}"
-        logger.error(error_msg)
+        global_logger.error(error_msg)
         raise
 
 
 async def main():
-    logger.debug("====== main() function started ======")
+    global_logger.debug("====== main() function started ======")
     try:
-        logger.debug("Initializing stdio server")
+        global_logger.debug("Initializing stdio server")
         async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):
-            logger.debug(
+            global_logger.debug(
                 f"stdio server initialized: read_stream={debug_object(read_stream, 'read_stream')}, write_stream={debug_object(write_stream, 'write_stream')}"
             )
             try:
-                logger.debug("About to call server.run()")
+                global_logger.debug("About to call server.run()")
                 await server.run(read_stream, write_stream, options)
-                logger.debug("server.run() completed normally")
+                global_logger.debug("server.run() completed normally")
             except Exception as e:
-                logger.exception(f"Error in server.run(): {str(e)}")
+                global_logger.exception(f"Error in server.run(): {str(e)}")
                 raise
-        logger.debug("stdio server context exited")
+        global_logger.debug("stdio server context exited")
     except Exception as e:
-        logger.exception(f"Error in main(): {str(e)}")
+        global_logger.exception(f"Error in main(): {str(e)}")
         raise
     finally:
-        logger.debug("====== main() function exiting ======")
+        global_logger.debug("====== main() function exiting ======")
 
 
 if __name__ == "__main__":
-    logger.debug("Module executed directly")
+    global_logger.debug("Module executed directly")
     import asyncio
 
-    logger.debug("Starting asyncio.run(main())")
+    global_logger.debug("Starting asyncio.run(main())")
     try:
         asyncio.run(main())
-        logger.debug("asyncio.run(main()) completed successfully")
+        global_logger.debug("asyncio.run(main()) completed successfully")
     except Exception as e:
-        logger.exception(f"Uncaught exception in asyncio.run(main()): {str(e)}")
+        global_logger.exception(f"Uncaught exception in asyncio.run(main()): {str(e)}")
         sys.exit(1)
-    logger.debug("Script exiting")
+    global_logger.debug("Script exiting")
