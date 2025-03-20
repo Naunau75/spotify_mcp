@@ -1,0 +1,1173 @@
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlayback', 'SpotifySearch', 'SpotifyQueue', 'SpotifyGetInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlayback', 'SpotifySearch', 'SpotifyQueue', 'SpotifyGetInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlayback', 'SpotifySearch', 'SpotifyQueue', 'SpotifyGetInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Genesis', 'qtype': 'track', 'limit': '10'}
+[INFO] Performing search with arguments: {'query': 'Genesis', 'qtype': 'track', 'limit': '10'}
+[INFO] Auth check result: valid
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': 'TestThib', 'search_query': 'Mama - 2007 Remaster Genesis'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': 'TestThib', 'search_query': 'Mama - 2007 Remaster Genesis'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Recherche du titre : Mama - 2007 Remaster Genesis
+[INFO] Auth check result: valid
+[ERROR] Unexpected error occurred: 0
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': 'TestThib', 'search_query': 'Genesis Mama', 'limit': '5'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': 'TestThib', 'search_query': 'Genesis Mama', 'limit': '5'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Recherche du titre : Genesis Mama
+[INFO] Auth check result: valid
+[ERROR] Unexpected error occurred: 0
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'create', 'playlist_details': '{"name": "TestThib", "description": "Playlist avec des titres de Genesis", "public": true}'}
+[INFO] Handling playlist operation with arguments: {'action': 'create', 'playlist_details': '{"name": "TestThib", "description": "Playlist avec des titres de Genesis", "public": true}'}
+[INFO] Creating a new playlist
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '1pzPMoJbPx8aVii5UoYaBW', 'search_query': 'Genesis Mama', 'limit': '5'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '1pzPMoJbPx8aVii5UoYaBW', 'search_query': 'Genesis Mama', 'limit': '5'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Recherche du titre : Genesis Mama
+[INFO] Auth check result: valid
+[ERROR] Unexpected error occurred: 0
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '6kIwzLSiQU51taaaZ9zWSE'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '6kIwzLSiQU51taaaZ9zWSE'}
+[INFO] Auth check result: valid
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '0qbhFj4bVrguIZViOJOs36'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '0qbhFj4bVrguIZViOJOs36'}
+[INFO] Auth check result: valid
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Tool called: SpotifySearch with arguments: {'limit': '5', 'qtype': 'track', 'query': 'Magma'}
+[INFO] Performing search with arguments: {'limit': '5', 'qtype': 'track', 'query': 'Magma'}
+[INFO] Auth check result: valid
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'limit': '5', 'qtype': 'track', 'query': 'groupe Magma'}
+[INFO] Performing search with arguments: {'limit': '5', 'qtype': 'track', 'query': 'groupe Magma'}
+[INFO] Auth check result: valid
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'limit': '5', 'qtype': 'track', 'query': 'artist:Magma'}
+[INFO] Performing search with arguments: {'limit': '5', 'qtype': 'track', 'query': 'artist:Magma'}
+[INFO] Auth check result: valid
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '1pzPMoJbPx8aVii5UoYaBW', 'search_query': 'Üdü wüdü Magma'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '1pzPMoJbPx8aVii5UoYaBW', 'search_query': 'Üdü wüdü Magma'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Recherche du titre : Üdü wüdü Magma
+[INFO] Auth check result: valid
+[ERROR] Unexpected error occurred: 0
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '6aPySSZdGIxmVBTD7oQjCA'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '6aPySSZdGIxmVBTD7oQjCA'}
+[INFO] Auth check result: valid
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '1eHyuT3osRWI9RZQbaPoT3'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '1eHyuT3osRWI9RZQbaPoT3'}
+[INFO] Auth check result: valid
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlayback', 'SpotifySearch', 'SpotifyQueue', 'SpotifyGetInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlayback', 'SpotifySearch', 'SpotifyQueue', 'SpotifyGetInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlayback', 'SpotifySearch', 'SpotifyQueue', 'SpotifyGetInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] server.run() completed normally
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['-m']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['-m']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['-m']
+[DEBUG] Arguments: sys.argv (list): ['-m']
+[DEBUG] Initializing Spotify client
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[EXCEPTION] Uncaught exception in asyncio.run(main()): I/O operation on closed file.
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/streams/memory.py", line 111, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/streams/memory.py", line 106, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 530, in main
+    await server.run(read_stream, write_stream, options)
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/mcp/server/lowlevel/server.py", line 484, in run
+    async with AsyncExitStack() as stack:
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/contextlib.py", line 754, in __aexit__
+    raise exc_details[1]
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/contextlib.py", line 737, in __aexit__
+    cb_suppress = await cb(*exc_details)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/mcp/shared/session.py", line 197, in __aexit__
+    return await self._task_group.__aexit__(exc_type, exc_val, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 767, in __aexit__
+    raise exc_val
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/mcp/server/lowlevel/server.py", line 490, in run
+    async with anyio.create_task_group() as tg:
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 767, in __aexit__
+    raise exc_val
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/mcp/server/lowlevel/server.py", line 491, in run
+    async for message in session.incoming_messages:
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/abc/_streams.py", line 35, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/streams/memory.py", line 119, in receive
+    await receive_event.wait()
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1747, in wait
+    await self._event.wait()
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/asyncio/locks.py", line 212, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 549, in <module>
+    asyncio.run(main())
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 540, in main
+    global_logger.debug("====== main() function exiting ======")
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 42, in debug
+    print(log_message)
+ValueError: I/O operation on closed file.
+
+[EXCEPTION] Uncaught exception in asyncio.run(main()): I/O operation on closed file.
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/streams/memory.py", line 111, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/streams/memory.py", line 106, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 530, in main
+    await server.run(read_stream, write_stream, options)
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/mcp/server/lowlevel/server.py", line 484, in run
+    async with AsyncExitStack() as stack:
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/contextlib.py", line 754, in __aexit__
+    raise exc_details[1]
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/contextlib.py", line 737, in __aexit__
+    cb_suppress = await cb(*exc_details)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/mcp/shared/session.py", line 197, in __aexit__
+    return await self._task_group.__aexit__(exc_type, exc_val, exc_tb)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 767, in __aexit__
+    raise exc_val
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/mcp/server/lowlevel/server.py", line 490, in run
+    async with anyio.create_task_group() as tg:
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 767, in __aexit__
+    raise exc_val
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/mcp/server/lowlevel/server.py", line 491, in run
+    async for message in session.incoming_messages:
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/abc/_streams.py", line 35, in __anext__
+    return await self.receive()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/streams/memory.py", line 119, in receive
+    await receive_event.wait()
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1747, in wait
+    await self._event.wait()
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/asyncio/locks.py", line 212, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 549, in <module>
+    asyncio.run(main())
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/.pyenv/versions/3.12.4/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 540, in main
+    global_logger.debug("====== main() function exiting ======")
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 42, in debug
+    print(log_message)
+ValueError: I/O operation on closed file.
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['-m']
+[DEBUG] Arguments: sys.argv (list): ['-m']
+[DEBUG] Initializing Spotify client
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] Spotify client initialized successfully
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlayback', 'SpotifySearch', 'SpotifyQueue', 'SpotifyGetInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlayback', 'SpotifySearch', 'SpotifyQueue', 'SpotifyGetInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[INFO] Initializing Spotify client with logger
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[INFO] Initializing Spotify client with logger
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[INFO] Initializing Spotify client with logger
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] Auth check result: expired
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['src/spotify_mcp/server.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] Module executed directly
+[DEBUG] Starting asyncio.run(main())
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/test_search.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/test_search.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/test_search.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/test_search.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/test_search.py']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] ====== main() function exiting ======
