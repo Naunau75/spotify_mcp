@@ -1412,3 +1412,49 @@ Traceback (most recent call last):
                                                     ~~~~~~~^^^
 IndexError: list index out of range
 
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
