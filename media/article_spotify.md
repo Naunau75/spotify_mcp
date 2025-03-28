@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Le Spotify Model Context Protocol (MCP) est une implémentation innovante permettant à l'assistant Claude d'interagir directement avec l'API Spotify. Cette solution technique offre une interface robuste entre les capacités de l'IA et les fonctionnalités de streaming musical de Spotify.
+
+Le Model Context Protocol (MCP) est un protocole standardisé conçu pour permettre aux modèles de langage (LLM - Large Language Models) d'interagir de manière structurée avec des outils et des systèmes externes. Dans le contexte de ce projet, le Spotify Model Context Protocol permet à l'assistant Claude d'interagir directement avec l'API Spotify.
 
 ## Architecture Technique
 

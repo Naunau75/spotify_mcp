@@ -1458,3 +1458,1475 @@ Traceback (most recent call last):
                                                     ~~~~~~~^^^
 IndexError: list index out of range
 
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning Freebox Player POP.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning Freebox Player POP.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting user's top artists for short_term with limit 10
+[INFO] Retrieved 10 top artists
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Rush', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'Rush', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting user's top artists for short_term with limit 10
+[INFO] Retrieved 10 top artists
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Dream Theater', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Dream Theater', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Porcupine Tree', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Porcupine Tree', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Opeth', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Opeth', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Marillion', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Marillion', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'King Crimson', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'King Crimson', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Transatlantic', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Transatlantic', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Haken', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Haken', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Neal Morse', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Neal Morse', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Pain of Salvation', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Pain of Salvation', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Big Big Train', 'qtype': 'artist'}
+[INFO] Performing search with arguments: {'query': 'Big Big Train', 'qtype': 'artist'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:68VJJPVAVNAmwsDDf1i70g'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:68VJJPVAVNAmwsDDf1i70g'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'The Flower Kings', 'qtype': 'track', 'limit': '20'}
+[INFO] Performing search with arguments: {'query': 'The Flower Kings', 'qtype': 'track', 'limit': '20'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '5'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '5'}
+[INFO] Getting user's top artists for short_term with limit 5
+[INFO] Retrieved 5 top artists
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'IQ band', 'qtype': 'album', 'limit': '5'}
+[INFO] Performing search with arguments: {'query': 'IQ band', 'qtype': 'album', 'limit': '5'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:7GDBqGhLq1zEzZwG8Gcr8P'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:7GDBqGhLq1zEzZwG8Gcr8P'}
+[INFO] Tool called: SpotifyPlay with arguments: {'action': 'start', 'spotify_uri': 'spotify:album:7GDBqGhLq1zEzZwG8Gcr8P'}
+[INFO] Starting playback with arguments: {'action': 'start', 'spotify_uri': 'spotify:album:7GDBqGhLq1zEzZwG8Gcr8P'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Starting playback for spotify_uri: spotify:album:7GDBqGhLq1zEzZwG8Gcr8P on {'id': '0ea7b3eb5a90d94b43684e53ed8da27af5c24d41', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'MacBook Pro de Christophe', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}
+[INFO] Starting playback of on {'id': '0ea7b3eb5a90d94b43684e53ed8da27af5c24d41', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'MacBook Pro de Christophe', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}: context_uri=spotify:album:7GDBqGhLq1zEzZwG8Gcr8P, uris=None
+[INFO] Playback result: None
+[INFO] Playback started successfully
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'IQ band top tracks', 'qtype': 'track', 'limit': '10'}
+[INFO] Performing search with arguments: {'query': 'IQ band top tracks', 'qtype': 'track', 'limit': '10'}
+[INFO] Auth check result: valid
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'create', 'playlist_details': '{"name": "ProgTop", "description": "Top tracks de IQ", "public": true, "collaborative": false}', 'playlist_id': 'null', 'search_query': 'null'}
+[INFO] Handling playlist operation with arguments: {'action': 'create', 'playlist_details': '{"name": "ProgTop", "description": "Top tracks de IQ", "public": true, "collaborative": false}', 'playlist_id': 'null', 'search_query': 'null'}
+[INFO] Creating a new playlist
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ Shallow Bay', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ Shallow Bay', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "7pfm4ptiC2P28Bys6vACN5",
+  "search_query": "IQ Shallow Bay",
+  "limit": "1"
+}
+[INFO] Recherche du titre : IQ Shallow Bay
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=IQ%20Shallow%20Bay&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=IQ%20Shallow%20Bay&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 970,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+              },
+              "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+              "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+              "name": "IQ",
+              "type": "artist",
+              "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2qEKurNaC1oI7M7dwhFMne"
+          },
+          "href": "https://api.spotify.com/v1/albums/2qEKurNaC1oI7M7dwhFMne",
+          "id": "2qEKurNaC1oI7M7dwhFMne",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2730ded4188ec120ef48033e643"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e020ded4188ec120ef48033e643"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048510ded4188ec120ef48033e643"
+            }
+          ],
+          "is_playable": true,
+          "name": "Resistance",
+          "release_date": "2019-09-27",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:2qEKurNaC1oI7M7dwhFMne"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+            },
+            "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+            "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+            "name": "IQ",
+            "type": "artist",
+            "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 381066,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBL5J1900254"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1pMFPr3aDjfZjt7jzWuS7S"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1pMFPr3aDjfZjt7jzWuS7S",
+        "id": "1pMFPr3aDjfZjt7jzWuS7S",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Shallow Bay",
+        "popularity": 30,
+        "preview_url": null,
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:1pMFPr3aDjfZjt7jzWuS7S"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : Shallow Bay (spotify:track:1pMFPr3aDjfZjt7jzWuS7S)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAAAnNKtyswwqVCYaC+kStxnAGaAmvi'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ One Fatal Mistake', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ One Fatal Mistake', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "7pfm4ptiC2P28Bys6vACN5",
+  "search_query": "IQ One Fatal Mistake",
+  "limit": "1"
+}
+[INFO] Recherche du titre : IQ One Fatal Mistake
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=IQ%20One%20Fatal%20Mistake&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=IQ%20One%20Fatal%20Mistake&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+              },
+              "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+              "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+              "name": "IQ",
+              "type": "artist",
+              "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/7GDBqGhLq1zEzZwG8Gcr8P"
+          },
+          "href": "https://api.spotify.com/v1/albums/7GDBqGhLq1zEzZwG8Gcr8P",
+          "id": "7GDBqGhLq1zEzZwG8Gcr8P",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2732c8431595823c9a0d3d28200"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e022c8431595823c9a0d3d28200"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048512c8431595823c9a0d3d28200"
+            }
+          ],
+          "is_playable": true,
+          "name": "Frequency",
+          "release_date": "2020-11-20",
+          "release_date_precision": "day",
+          "total_tracks": 8,
+          "type": "album",
+          "uri": "spotify:album:7GDBqGhLq1zEzZwG8Gcr8P"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+            },
+            "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+            "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+            "name": "IQ",
+            "type": "artist",
+            "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 293573,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBL5J2000260"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6R5iIxWStsz728IMOKnRkT"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6R5iIxWStsz728IMOKnRkT",
+        "id": "6R5iIxWStsz728IMOKnRkT",
+        "is_local": false,
+        "is_playable": true,
+        "name": "One Fatal Mistake",
+        "popularity": 26,
+        "preview_url": null,
+        "track_number": 4,
+        "type": "track",
+        "uri": "spotify:track:6R5iIxWStsz728IMOKnRkT"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : One Fatal Mistake (spotify:track:6R5iIxWStsz728IMOKnRkT)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAAA5AJiJzPiRCYb7+ob0GrKLDixevk'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ If Anything', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ If Anything', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "7pfm4ptiC2P28Bys6vACN5",
+  "search_query": "IQ If Anything",
+  "limit": "1"
+}
+[INFO] Recherche du titre : IQ If Anything
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=IQ%20If%20Anything&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=IQ%20If%20Anything&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+              },
+              "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+              "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+              "name": "IQ",
+              "type": "artist",
+              "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2qEKurNaC1oI7M7dwhFMne"
+          },
+          "href": "https://api.spotify.com/v1/albums/2qEKurNaC1oI7M7dwhFMne",
+          "id": "2qEKurNaC1oI7M7dwhFMne",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2730ded4188ec120ef48033e643"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e020ded4188ec120ef48033e643"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048510ded4188ec120ef48033e643"
+            }
+          ],
+          "is_playable": true,
+          "name": "Resistance",
+          "release_date": "2019-09-27",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:2qEKurNaC1oI7M7dwhFMne"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+            },
+            "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+            "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+            "name": "IQ",
+            "type": "artist",
+            "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 363008,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBL5J1900255"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6TpvnBlF0FYTzmrnIcNZJv"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6TpvnBlF0FYTzmrnIcNZJv",
+        "id": "6TpvnBlF0FYTzmrnIcNZJv",
+        "is_local": false,
+        "is_playable": true,
+        "name": "If Anything",
+        "popularity": 24,
+        "preview_url": null,
+        "track_number": 6,
+        "type": "track",
+        "uri": "spotify:track:6TpvnBlF0FYTzmrnIcNZJv"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : If Anything (spotify:track:6TpvnBlF0FYTzmrnIcNZJv)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAABMPebZ3Sq/azGQyIttLxmwWnj5mA'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ Stay Down', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ Stay Down', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "7pfm4ptiC2P28Bys6vACN5",
+  "search_query": "IQ Stay Down",
+  "limit": "1"
+}
+[INFO] Recherche du titre : IQ Stay Down
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=IQ%20Stay%20Down&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=IQ%20Stay%20Down&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+              },
+              "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+              "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+              "name": "IQ",
+              "type": "artist",
+              "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2qEKurNaC1oI7M7dwhFMne"
+          },
+          "href": "https://api.spotify.com/v1/albums/2qEKurNaC1oI7M7dwhFMne",
+          "id": "2qEKurNaC1oI7M7dwhFMne",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2730ded4188ec120ef48033e643"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e020ded4188ec120ef48033e643"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048510ded4188ec120ef48033e643"
+            }
+          ],
+          "is_playable": true,
+          "name": "Resistance",
+          "release_date": "2019-09-27",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:2qEKurNaC1oI7M7dwhFMne"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+            },
+            "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+            "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+            "name": "IQ",
+            "type": "artist",
+            "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 474552,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBL5J1900252"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2qnbTyLTwjpsYsVhJPFrer"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2qnbTyLTwjpsYsVhJPFrer",
+        "id": "2qnbTyLTwjpsYsVhJPFrer",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Stay Down",
+        "popularity": 23,
+        "preview_url": null,
+        "track_number": 3,
+        "type": "track",
+        "uri": "spotify:track:2qnbTyLTwjpsYsVhJPFrer"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : Stay Down (spotify:track:2qnbTyLTwjpsYsVhJPFrer)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAABRsKseGGbSzYSJJrHXT1pS9wL/gh'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ 1312 Overture', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '7pfm4ptiC2P28Bys6vACN5', 'search_query': 'IQ 1312 Overture', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "7pfm4ptiC2P28Bys6vACN5",
+  "search_query": "IQ 1312 Overture",
+  "limit": "1"
+}
+[INFO] Recherche du titre : IQ 1312 Overture
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=IQ%201312%20Overture&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=IQ%201312%20Overture&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 801,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+              },
+              "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+              "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+              "name": "IQ",
+              "type": "artist",
+              "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/74Y1GWnPEyXfAmQaLMaQ4P"
+          },
+          "href": "https://api.spotify.com/v1/albums/74Y1GWnPEyXfAmQaLMaQ4P",
+          "id": "74Y1GWnPEyXfAmQaLMaQ4P",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2734667c8fb9c966d3ad74d0a7e"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e024667c8fb9c966d3ad74d0a7e"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048514667c8fb9c966d3ad74d0a7e"
+            }
+          ],
+          "is_playable": true,
+          "name": "The Road Of Bones",
+          "release_date": "2014-05-05",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:74Y1GWnPEyXfAmQaLMaQ4P"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0DQ9JcIWMGVzlQSfCVK4oN"
+            },
+            "href": "https://api.spotify.com/v1/artists/0DQ9JcIWMGVzlQSfCVK4oN",
+            "id": "0DQ9JcIWMGVzlQSfCVK4oN",
+            "name": "IQ",
+            "type": "artist",
+            "uri": "spotify:artist:0DQ9JcIWMGVzlQSfCVK4oN"
+          }
+        ],
+        "disc_number": 2,
+        "duration_ms": 257839,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBL5J1000056"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1aZEbAGfA8lNIsvMYof1S8"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1aZEbAGfA8lNIsvMYof1S8",
+        "id": "1aZEbAGfA8lNIsvMYof1S8",
+        "is_local": false,
+        "is_playable": true,
+        "name": "1312 Overture",
+        "popularity": 20,
+        "preview_url": null,
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:1aZEbAGfA8lNIsvMYof1S8"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : 1312 Overture (spotify:track:1aZEbAGfA8lNIsvMYof1S8)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAABnavBc8haYSsU/9//1zPVg4q4AjF'}
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'The Flower Kings', 'qtype': 'track', 'limit': '5'}
+[INFO] Performing search with arguments: {'query': 'The Flower Kings', 'qtype': 'track', 'limit': '5'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Camel', 'qtype': 'track', 'limit': '5'}
+[INFO] Performing search with arguments: {'query': 'Camel', 'qtype': 'track', 'limit': '5'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'create', 'playlist_details': '{"name": "TopVendredi", "description": "Playlist de The Flower Kings et Camel", "public": true, "collaborative": false}', 'playlist_id': 'null', 'search_query': 'null'}
+[INFO] Handling playlist operation with arguments: {'action': 'create', 'playlist_details': '{"name": "TopVendredi", "description": "Playlist de The Flower Kings et Camel", "public": true, "collaborative": false}', 'playlist_id': 'null', 'search_query': 'null'}
+[INFO] Creating a new playlist
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'The Wailing Wall by The Flower Kings', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'The Wailing Wall by The Flower Kings', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "3W7e3nXn1nK8t2VskGmu1a",
+  "search_query": "The Wailing Wall by The Flower Kings",
+  "limit": "1"
+}
+[INFO] Recherche du titre : The Wailing Wall by The Flower Kings
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=The%20Wailing%20Wall%20by%20The%20Flower%20Kings&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=The%20Wailing%20Wall%20by%20The%20Flower%20Kings&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5n72qzNEfzCXvNDxKComR7"
+              },
+              "href": "https://api.spotify.com/v1/artists/5n72qzNEfzCXvNDxKComR7",
+              "id": "5n72qzNEfzCXvNDxKComR7",
+              "name": "Arena",
+              "type": "artist",
+              "uri": "spotify:artist:5n72qzNEfzCXvNDxKComR7"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0vJXhrr3TTWLT9Rh5MuptU"
+          },
+          "href": "https://api.spotify.com/v1/albums/0vJXhrr3TTWLT9Rh5MuptU",
+          "id": "0vJXhrr3TTWLT9Rh5MuptU",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2733478f4bfe53e8caaee0c0e7e"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e023478f4bfe53e8caaee0c0e7e"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048513478f4bfe53e8caaee0c0e7e"
+            }
+          ],
+          "is_playable": true,
+          "name": "Pride",
+          "release_date": "2014-01-22",
+          "release_date_precision": "day",
+          "total_tracks": 9,
+          "type": "album",
+          "uri": "spotify:album:0vJXhrr3TTWLT9Rh5MuptU"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5n72qzNEfzCXvNDxKComR7"
+            },
+            "href": "https://api.spotify.com/v1/artists/5n72qzNEfzCXvNDxKComR7",
+            "id": "5n72qzNEfzCXvNDxKComR7",
+            "name": "Arena",
+            "type": "artist",
+            "uri": "spotify:artist:5n72qzNEfzCXvNDxKComR7"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 254960,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "uscgh1433849"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5IgaAxPPWLXYCqmBpWKDI4"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5IgaAxPPWLXYCqmBpWKDI4",
+        "id": "5IgaAxPPWLXYCqmBpWKDI4",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Welcome to the Cage",
+        "popularity": 8,
+        "preview_url": null,
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:5IgaAxPPWLXYCqmBpWKDI4"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : Welcome to the Cage (spotify:track:5IgaAxPPWLXYCqmBpWKDI4)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAAAh+V5xXqU2SmFt9IWctAqD51kbwl'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'Rising the Imperial by The Flower Kings', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'Rising the Imperial by The Flower Kings', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "3W7e3nXn1nK8t2VskGmu1a",
+  "search_query": "Rising the Imperial by The Flower Kings",
+  "limit": "1"
+}
+[INFO] Recherche du titre : Rising the Imperial by The Flower Kings
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=Rising%20the%20Imperial%20by%20The%20Flower%20Kings&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=Rising%20the%20Imperial%20by%20The%20Flower%20Kings&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0BI5vXwUl4lZMtARfXQ0No"
+              },
+              "href": "https://api.spotify.com/v1/artists/0BI5vXwUl4lZMtARfXQ0No",
+              "id": "0BI5vXwUl4lZMtARfXQ0No",
+              "name": "The Flower Kings",
+              "type": "artist",
+              "uri": "spotify:artist:0BI5vXwUl4lZMtARfXQ0No"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0IUjnLnoCU085IZCi0AHVg"
+          },
+          "href": "https://api.spotify.com/v1/albums/0IUjnLnoCU085IZCi0AHVg",
+          "id": "0IUjnLnoCU085IZCi0AHVg",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27350d860751a2d9d41627dd0c4"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0250d860751a2d9d41627dd0c4"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485150d860751a2d9d41627dd0c4"
+            }
+          ],
+          "is_playable": true,
+          "name": "Banks of Eden (Deluxe Edition)",
+          "release_date": "2012-06-18",
+          "release_date_precision": "day",
+          "total_tracks": 9,
+          "type": "album",
+          "uri": "spotify:album:0IUjnLnoCU085IZCi0AHVg"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0BI5vXwUl4lZMtARfXQ0No"
+            },
+            "href": "https://api.spotify.com/v1/artists/0BI5vXwUl4lZMtARfXQ0No",
+            "id": "0BI5vXwUl4lZMtARfXQ0No",
+            "name": "The Flower Kings",
+            "type": "artist",
+            "uri": "spotify:artist:0BI5vXwUl4lZMtARfXQ0No"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 472013,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBDHC1258605"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/15yTNWftYmVsVF6CyCmzUn"
+        },
+        "href": "https://api.spotify.com/v1/tracks/15yTNWftYmVsVF6CyCmzUn",
+        "id": "15yTNWftYmVsVF6CyCmzUn",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Rising the Imperial",
+        "popularity": 6,
+        "preview_url": null,
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:15yTNWftYmVsVF6CyCmzUn"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : Rising the Imperial (spotify:track:15yTNWftYmVsVF6CyCmzUn)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAAA5xW/NFRuI2Rc5jJ6aIpu2TKw4pm'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'Babylon by The Flower Kings', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'Babylon by The Flower Kings', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "3W7e3nXn1nK8t2VskGmu1a",
+  "search_query": "Babylon by The Flower Kings",
+  "limit": "1"
+}
+[INFO] Recherche du titre : Babylon by The Flower Kings
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=Babylon%20by%20The%20Flower%20Kings&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=Babylon%20by%20The%20Flower%20Kings&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3evVjC5a6WGD0HMOFH6iCt"
+              },
+              "href": "https://api.spotify.com/v1/artists/3evVjC5a6WGD0HMOFH6iCt",
+              "id": "3evVjC5a6WGD0HMOFH6iCt",
+              "name": "Roine Stolt",
+              "type": "artist",
+              "uri": "spotify:artist:3evVjC5a6WGD0HMOFH6iCt"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4I30EQjOonrHovN7rTtFKG"
+          },
+          "href": "https://api.spotify.com/v1/albums/4I30EQjOonrHovN7rTtFKG",
+          "id": "4I30EQjOonrHovN7rTtFKG",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2736a9d06ce81d1a5be04cffdbe"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e026a9d06ce81d1a5be04cffdbe"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048516a9d06ce81d1a5be04cffdbe"
+            }
+          ],
+          "is_playable": true,
+          "name": "The Flower King",
+          "release_date": "1994",
+          "release_date_precision": "year",
+          "total_tracks": 8,
+          "type": "album",
+          "uri": "spotify:album:4I30EQjOonrHovN7rTtFKG"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3evVjC5a6WGD0HMOFH6iCt"
+            },
+            "href": "https://api.spotify.com/v1/artists/3evVjC5a6WGD0HMOFH6iCt",
+            "id": "3evVjC5a6WGD0HMOFH6iCt",
+            "name": "Roine Stolt",
+            "type": "artist",
+            "uri": "spotify:artist:3evVjC5a6WGD0HMOFH6iCt"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 1253640,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBDHC0906007"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1kkfa7dP8qOWPJCKUQwg9C"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1kkfa7dP8qOWPJCKUQwg9C",
+        "id": "1kkfa7dP8qOWPJCKUQwg9C",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Humanizzimo",
+        "popularity": 6,
+        "preview_url": null,
+        "track_number": 7,
+        "type": "track",
+        "uri": "spotify:track:1kkfa7dP8qOWPJCKUQwg9C"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : Humanizzimo (spotify:track:1kkfa7dP8qOWPJCKUQwg9C)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAABBekvhX9c63LcFNWo/Ybj3me66Hz'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'Freefall by Camel', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'Freefall by Camel', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "3W7e3nXn1nK8t2VskGmu1a",
+  "search_query": "Freefall by Camel",
+  "limit": "1"
+}
+[INFO] Recherche du titre : Freefall by Camel
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=Freefall%20by%20Camel&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=Freefall%20by%20Camel&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/727fejvRrrdMtMANSE0IfL"
+              },
+              "href": "https://api.spotify.com/v1/artists/727fejvRrrdMtMANSE0IfL",
+              "id": "727fejvRrrdMtMANSE0IfL",
+              "name": "MyGrain",
+              "type": "artist",
+              "uri": "spotify:artist:727fejvRrrdMtMANSE0IfL"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4S2gySDpUbL6H0Ph2JWJgx"
+          },
+          "href": "https://api.spotify.com/v1/albums/4S2gySDpUbL6H0Ph2JWJgx",
+          "id": "4S2gySDpUbL6H0Ph2JWJgx",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2735de64a4db2a73d9c215c71cb"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e025de64a4db2a73d9c215c71cb"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048515de64a4db2a73d9c215c71cb"
+            }
+          ],
+          "is_playable": true,
+          "name": "Orbit Dance",
+          "release_date": "2016-06-24",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:4S2gySDpUbL6H0Ph2JWJgx"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/727fejvRrrdMtMANSE0IfL"
+            },
+            "href": "https://api.spotify.com/v1/artists/727fejvRrrdMtMANSE0IfL",
+            "id": "727fejvRrrdMtMANSE0IfL",
+            "name": "MyGrain",
+            "type": "artist",
+            "uri": "spotify:artist:727fejvRrrdMtMANSE0IfL"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 246466,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "FISFS0600024"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6TmqRmwu2a1Y9hYCAaNr1x"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6TmqRmwu2a1Y9hYCAaNr1x",
+        "id": "6TmqRmwu2a1Y9hYCAaNr1x",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Downfall",
+        "popularity": 5,
+        "preview_url": null,
+        "track_number": 8,
+        "type": "track",
+        "uri": "spotify:track:6TmqRmwu2a1Y9hYCAaNr1x"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : Downfall (spotify:track:6TmqRmwu2a1Y9hYCAaNr1x)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAABbML/XIu9YH2apMA4C/lVH4YhQVJ'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'Ice by Camel', 'limit': '1'}
+[INFO] Handling playlist operation with arguments: {'action': 'search_and_add', 'playlist_id': '3W7e3nXn1nK8t2VskGmu1a', 'search_query': 'Ice by Camel', 'limit': '1'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "action": "search_and_add",
+  "playlist_id": "3W7e3nXn1nK8t2VskGmu1a",
+  "search_query": "Ice by Camel",
+  "limit": "1"
+}
+[INFO] Recherche du titre : Ice by Camel
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=Ice%20by%20Camel&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=Ice%20by%20Camel&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
+              },
+              "href": "https://api.spotify.com/v1/artists/7M1FPw29m5FbicYzS2xdpi",
+              "id": "7M1FPw29m5FbicYzS2xdpi",
+              "name": "King Crimson",
+              "type": "artist",
+              "uri": "spotify:artist:7M1FPw29m5FbicYzS2xdpi"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4ttC4XUinZXn3GMIQNrjFZ"
+          },
+          "href": "https://api.spotify.com/v1/albums/4ttC4XUinZXn3GMIQNrjFZ",
+          "id": "4ttC4XUinZXn3GMIQNrjFZ",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273ebb799f3ca90f59bd04f6a72"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02ebb799f3ca90f59bd04f6a72"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851ebb799f3ca90f59bd04f6a72"
+            }
+          ],
+          "is_playable": true,
+          "name": "Starless And Bible Black",
+          "release_date": "1974-03-29",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:4ttC4XUinZXn3GMIQNrjFZ"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
+            },
+            "href": "https://api.spotify.com/v1/artists/7M1FPw29m5FbicYzS2xdpi",
+            "id": "7M1FPw29m5FbicYzS2xdpi",
+            "name": "King Crimson",
+            "type": "artist",
+            "uri": "spotify:artist:7M1FPw29m5FbicYzS2xdpi"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 241945,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBCTX1500290"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/23Glh1ykxUAZI43Ac9E8xw"
+        },
+        "href": "https://api.spotify.com/v1/tracks/23Glh1ykxUAZI43Ac9E8xw",
+        "id": "23Glh1ykxUAZI43Ac9E8xw",
+        "is_local": false,
+        "is_playable": true,
+        "name": "The Great Deceiver",
+        "popularity": 32,
+        "preview_url": null,
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:23Glh1ykxUAZI43Ac9E8xw"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : The Great Deceiver (spotify:track:23Glh1ykxUAZI43Ac9E8xw)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAABiv8aPTljfxvMJIkbM87b2obdjyx'}
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '0eUUWjQtHNa0Ss20hKxw38'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '0eUUWjQtHNa0Ss20hKxw38'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '1URz2ynk1x5CWqDsbxTsPL'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '1URz2ynk1x5CWqDsbxTsPL'}
+[INFO] Auth check result: valid
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '1LPMIDdRPmA4L0bqpmxRyr'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '1LPMIDdRPmA4L0bqpmxRyr'}
+[INFO] Auth check result: valid
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '0VLETiR8ft4wZHlCQf3UAf'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '0VLETiR8ft4wZHlCQf3UAf'}
+[INFO] Auth check result: valid
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '5SHYJ4vOkW7Q3avOMehBrk'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '5SHYJ4vOkW7Q3avOMehBrk'}
+[INFO] Auth check result: valid
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
