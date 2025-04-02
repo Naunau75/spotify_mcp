@@ -2930,3 +2930,798 @@ IndexError: list index out of range
 [DEBUG] Initializing stdio server
 [DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
 [DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '5'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '5'}
+[INFO] Getting user's top artists for short_term with limit 5
+[INFO] Retrieved 5 top artists
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Big Big Train', 'qtype': 'album', 'limit': '5'}
+[INFO] Performing search with arguments: {'query': 'Big Big Train', 'qtype': 'album', 'limit': '5'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:3j1MgNFNI90XdSTEGDN4pa'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:3j1MgNFNI90XdSTEGDN4pa'}
+[INFO] Tool called: SpotifyPlay with arguments: {'action': 'start', 'spotify_uri': 'spotify:album:3j1MgNFNI90XdSTEGDN4pa'}
+[INFO] Starting playback with arguments: {'action': 'start', 'spotify_uri': 'spotify:album:3j1MgNFNI90XdSTEGDN4pa'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Starting playback for spotify_uri: spotify:album:3j1MgNFNI90XdSTEGDN4pa on {'id': '0ea7b3eb5a90d94b43684e53ed8da27af5c24d41', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'MacBook Pro de Christophe', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}
+[INFO] Starting playback of on {'id': '0ea7b3eb5a90d94b43684e53ed8da27af5c24d41', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'MacBook Pro de Christophe', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}: context_uri=spotify:album:3j1MgNFNI90XdSTEGDN4pa, uris=None
+[INFO] Playback result: None
+[INFO] Playback started successfully
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'action': 'create', 'playlist_id': 'null', 'search_query': 'null', 'playlist_details': '{"name": "BigBigTrainPlaylist", "description": "Playlist des meilleurs titres de Big Big Train", "public": true, "collaborative": false}'}
+[INFO] Handling playlist operation with arguments: {'action': 'create', 'playlist_id': 'null', 'search_query': 'null', 'playlist_details': '{"name": "BigBigTrainPlaylist", "description": "Playlist des meilleurs titres de Big Big Train", "public": true, "collaborative": false}'}
+[INFO] Creating a new playlist
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'limit': '1', 'action': 'search_and_add', 'playlist_id': '5iCLjo7AzBpEaiWqFDa84e', 'search_query': 'Folklore by Big Big Train'}
+[INFO] Handling playlist operation with arguments: {'limit': '1', 'action': 'search_and_add', 'playlist_id': '5iCLjo7AzBpEaiWqFDa84e', 'search_query': 'Folklore by Big Big Train'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "limit": "1",
+  "action": "search_and_add",
+  "playlist_id": "5iCLjo7AzBpEaiWqFDa84e",
+  "search_query": "Folklore by Big Big Train"
+}
+[INFO] Recherche du titre : Folklore by Big Big Train
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=Folklore%20by%20Big%20Big%20Train&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=Folklore%20by%20Big%20Big%20Train&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7by60V2ChbeiVhwXK5Jk6l"
+              },
+              "href": "https://api.spotify.com/v1/artists/7by60V2ChbeiVhwXK5Jk6l",
+              "id": "7by60V2ChbeiVhwXK5Jk6l",
+              "name": "Black Country Communion",
+              "type": "artist",
+              "uri": "spotify:artist:7by60V2ChbeiVhwXK5Jk6l"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0icCshvu021X0nWRdTTgeV"
+          },
+          "href": "https://api.spotify.com/v1/albums/0icCshvu021X0nWRdTTgeV",
+          "id": "0icCshvu021X0nWRdTTgeV",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2737fd9e716de419690ec60cbd6"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e027fd9e716de419690ec60cbd6"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048517fd9e716de419690ec60cbd6"
+            }
+          ],
+          "is_playable": true,
+          "name": "Afterglow",
+          "release_date": "2012-10-29",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:0icCshvu021X0nWRdTTgeV"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7by60V2ChbeiVhwXK5Jk6l"
+            },
+            "href": "https://api.spotify.com/v1/artists/7by60V2ChbeiVhwXK5Jk6l",
+            "id": "7by60V2ChbeiVhwXK5Jk6l",
+            "name": "Black Country Communion",
+            "type": "artist",
+            "uri": "spotify:artist:7by60V2ChbeiVhwXK5Jk6l"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 257386,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USMH51200250"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2u1ZQhy4zO12680H4rNa6k"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2u1ZQhy4zO12680H4rNa6k",
+        "id": "2u1ZQhy4zO12680H4rNa6k",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Big Train",
+        "popularity": 13,
+        "preview_url": null,
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:2u1ZQhy4zO12680H4rNa6k"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : Big Train (spotify:track:2u1ZQhy4zO12680H4rNa6k)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAAAgKRRNQ5L3IapF9kQh7vqhhdAvdc'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'limit': '1', 'action': 'search_and_add', 'playlist_id': '5iCLjo7AzBpEaiWqFDa84e', 'search_query': 'London Plane by Big Big Train'}
+[INFO] Handling playlist operation with arguments: {'limit': '1', 'action': 'search_and_add', 'playlist_id': '5iCLjo7AzBpEaiWqFDa84e', 'search_query': 'London Plane by Big Big Train'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "limit": "1",
+  "action": "search_and_add",
+  "playlist_id": "5iCLjo7AzBpEaiWqFDa84e",
+  "search_query": "London Plane by Big Big Train"
+}
+[INFO] Recherche du titre : London Plane by Big Big Train
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=London%20Plane%20by%20Big%20Big%20Train&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=London%20Plane%20by%20Big%20Big%20Train&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3dS8rLINyM7EYuMXryXJym"
+              },
+              "href": "https://api.spotify.com/v1/artists/3dS8rLINyM7EYuMXryXJym",
+              "id": "3dS8rLINyM7EYuMXryXJym",
+              "name": "Steve Harley",
+              "type": "artist",
+              "uri": "spotify:artist:3dS8rLINyM7EYuMXryXJym"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2R0yiz2QarC0mSQg8ZDldj"
+          },
+          "href": "https://api.spotify.com/v1/albums/2R0yiz2QarC0mSQg8ZDldj",
+          "id": "2R0yiz2QarC0mSQg8ZDldj",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273143ebb644343068a9401980f"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02143ebb644343068a9401980f"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851143ebb644343068a9401980f"
+            }
+          ],
+          "is_playable": true,
+          "name": "Uncovered",
+          "release_date": "2020-02-21",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:2R0yiz2QarC0mSQg8ZDldj"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3dS8rLINyM7EYuMXryXJym"
+            },
+            "href": "https://api.spotify.com/v1/artists/3dS8rLINyM7EYuMXryXJym",
+            "id": "3dS8rLINyM7EYuMXryXJym",
+            "name": "Steve Harley",
+            "type": "artist",
+            "uri": "spotify:artist:3dS8rLINyM7EYuMXryXJym"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 228520,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "UKHTR2000011"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0JtX4rnH46zoxIfKCv82zR"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0JtX4rnH46zoxIfKCv82zR",
+        "id": "0JtX4rnH46zoxIfKCv82zR",
+        "is_local": false,
+        "is_playable": true,
+        "name": "When I Paint My Masterpiece",
+        "popularity": 7,
+        "preview_url": null,
+        "track_number": 11,
+        "type": "track",
+        "uri": "spotify:track:0JtX4rnH46zoxIfKCv82zR"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : When I Paint My Masterpiece (spotify:track:0JtX4rnH46zoxIfKCv82zR)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAAAxlo6/6YnUs6pNHE1dlNSVZ2XEGp'}
+[INFO] Tool called: SpotifyPlaylistCreator with arguments: {'limit': '1', 'action': 'search_and_add', 'playlist_id': '5iCLjo7AzBpEaiWqFDa84e', 'search_query': 'Wassail by Big Big Train'}
+[INFO] Handling playlist operation with arguments: {'limit': '1', 'action': 'search_and_add', 'playlist_id': '5iCLjo7AzBpEaiWqFDa84e', 'search_query': 'Wassail by Big Big Train'}
+[INFO] Searching tracks and adding to playlist
+[INFO] Arguments reçus: {
+  "limit": "1",
+  "action": "search_and_add",
+  "playlist_id": "5iCLjo7AzBpEaiWqFDa84e",
+  "search_query": "Wassail by Big Big Train"
+}
+[INFO] Recherche du titre : Wassail by Big Big Train
+[INFO] Résultats de recherche reçus: True
+[DEBUG] Résultats détaillés: {
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?offset=0&limit=1&query=Wassail%20by%20Big%20Big%20Train&type=track&market=FR",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?offset=1&limit=1&query=Wassail%20by%20Big%20Big%20Train&type=track&market=FR",
+    "offset": 0,
+    "previous": null,
+    "total": 1000,
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7by60V2ChbeiVhwXK5Jk6l"
+              },
+              "href": "https://api.spotify.com/v1/artists/7by60V2ChbeiVhwXK5Jk6l",
+              "id": "7by60V2ChbeiVhwXK5Jk6l",
+              "name": "Black Country Communion",
+              "type": "artist",
+              "uri": "spotify:artist:7by60V2ChbeiVhwXK5Jk6l"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0icCshvu021X0nWRdTTgeV"
+          },
+          "href": "https://api.spotify.com/v1/albums/0icCshvu021X0nWRdTTgeV",
+          "id": "0icCshvu021X0nWRdTTgeV",
+          "images": [
+            {
+              "height": 640,
+              "width": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2737fd9e716de419690ec60cbd6"
+            },
+            {
+              "height": 300,
+              "width": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e027fd9e716de419690ec60cbd6"
+            },
+            {
+              "height": 64,
+              "width": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048517fd9e716de419690ec60cbd6"
+            }
+          ],
+          "is_playable": true,
+          "name": "Afterglow",
+          "release_date": "2012-10-29",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:0icCshvu021X0nWRdTTgeV"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7by60V2ChbeiVhwXK5Jk6l"
+            },
+            "href": "https://api.spotify.com/v1/artists/7by60V2ChbeiVhwXK5Jk6l",
+            "id": "7by60V2ChbeiVhwXK5Jk6l",
+            "name": "Black Country Communion",
+            "type": "artist",
+            "uri": "spotify:artist:7by60V2ChbeiVhwXK5Jk6l"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 257386,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USMH51200250"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2u1ZQhy4zO12680H4rNa6k"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2u1ZQhy4zO12680H4rNa6k",
+        "id": "2u1ZQhy4zO12680H4rNa6k",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Big Train",
+        "popularity": 13,
+        "preview_url": null,
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:2u1ZQhy4zO12680H4rNa6k"
+      }
+    ]
+  }
+}
+[INFO] Titre trouvé : Big Train (spotify:track:2u1ZQhy4zO12680H4rNa6k)
+[INFO] Résultat de l'ajout : {'snapshot_id': 'AAAABBUAdTXZdyg4rmcMKnfXsHB36Tro'}
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '5BQR1vcdmvhGvK1RvZyxdQ'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '5BQR1vcdmvhGvK1RvZyxdQ'}
+[INFO] Auth check result: valid
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '1LMSZtIcGWk8ffeaHWxyqN'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '1LMSZtIcGWk8ffeaHWxyqN'}
+[INFO] Auth check result: valid
+[INFO] Tool called: SpotifyQueue with arguments: {'action': 'add', 'track_id': '7bz23vNdWKYhParY3f9lPy'}
+[INFO] Queue operation with arguments: {'action': 'add', 'track_id': '7bz23vNdWKYhParY3f9lPy'}
+[INFO] Auth check result: valid
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'tracks', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting top items with arguments: {'item_type': 'tracks', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting user's top tracks for short_term with limit 10
+[INFO] Retrieved 10 top tracks
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting user's top artists for short_term with limit 10
+[INFO] Retrieved 10 top artists
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'dream theater', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'dream theater', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'symphony x', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'symphony x', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'symphony x', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'symphony x', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'pain of salvation', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'pain of salvation', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'haken', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'haken', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'opeth', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'opeth', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'porcupine tree', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'porcupine tree', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'tool', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'tool', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'riverside band', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'riverside band', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'riverside prog band', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'riverside prog band', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'leprous', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'leprous', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': "caligula's horse", 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': "caligula's horse", 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:6Zd7AjXsoLaweP9FHyudVC'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:6Zd7AjXsoLaweP9FHyudVC'}
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '20'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '20'}
+[INFO] Getting user's top artists for short_term with limit 20
+[INFO] Retrieved 20 top artists
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Dream Theater', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'Dream Theater', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Opeth', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'Opeth', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting user's top artists for short_term with limit 10
+[INFO] Retrieved 10 top artists
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting user's top artists for short_term with limit 10
+[INFO] Retrieved 10 top artists
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Riverside', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Riverside', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Opeth', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Opeth', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Porcupine Tree', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Porcupine Tree', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Haken', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Haken', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': "artist:Caligula's Horse", 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': "artist:Caligula's Horse", 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Caligula Horse', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Caligula Horse', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '10'}
+[INFO] Getting user's top artists for short_term with limit 10
+[INFO] Retrieved 10 top artists
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Pain of Salvation', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Pain of Salvation', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:1uRpg2s2jNaxbmoNiJDGfd'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:1uRpg2s2jNaxbmoNiJDGfd'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:3p3jOZI2RjHPVpu7kfgjOB'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:3p3jOZI2RjHPVpu7kfgjOB'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:59CVVonQciTIUJH5zr7hia'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:59CVVonQciTIUJH5zr7hia'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:1Y31kS1a9b6tyXA9aAN9Tw'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:1Y31kS1a9b6tyXA9aAN9Tw'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Pain of Salvation', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Pain of Salvation', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:1uRpg2s2jNaxbmoNiJDGfd'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:1uRpg2s2jNaxbmoNiJDGfd'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:3p3jOZI2RjHPVpu7kfgjOB'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:3p3jOZI2RjHPVpu7kfgjOB'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:59CVVonQciTIUJH5zr7hia'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:59CVVonQciTIUJH5zr7hia'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:1Y31kS1a9b6tyXA9aAN9Tw'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:1Y31kS1a9b6tyXA9aAN9Tw'}
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:0BI5vXwUl4lZMtARfXQ0No'}
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Pain of Salvation', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Pain of Salvation', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:1uRpg2s2jNaxbmoNiJDGfd'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:1uRpg2s2jNaxbmoNiJDGfd'}
+[INFO] Tool called: SpotifyPlay with arguments: {'action': 'start', 'spotify_uri': 'spotify:album:0yqtdNIwsXSZHL7A0QNBBb'}
+[INFO] Starting playback with arguments: {'action': 'start', 'spotify_uri': 'spotify:album:0yqtdNIwsXSZHL7A0QNBBb'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Starting playback for spotify_uri: spotify:album:0yqtdNIwsXSZHL7A0QNBBb on {'id': '0ea7b3eb5a90d94b43684e53ed8da27af5c24d41', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'MacBook Pro de Christophe', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}
+[INFO] Starting playback of on {'id': '0ea7b3eb5a90d94b43684e53ed8da27af5c24d41', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'MacBook Pro de Christophe', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}: context_uri=spotify:album:0yqtdNIwsXSZHL7A0QNBBb, uris=None
+[INFO] Playback result: None
+[INFO] Playback started successfully
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Listing available tools
+[DEBUG] handle_list_tools called
+[INFO] Available tools: ['SpotifyPlay', 'SpotifySearch', 'SpotifyQueue', 'SpotifyInfo', 'SpotifyTopItems', 'SpotifyPlaylistCreator']
+[DEBUG] Returning 6 tools
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[INFO] Tool called: SpotifyTopItems with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '5'}
+[INFO] Getting top items with arguments: {'item_type': 'artists', 'time_range': 'short_term', 'limit': '5'}
+[INFO] Getting user's top artists for short_term with limit 5
+[INFO] Retrieved 5 top artists
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Porcupine Tree', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Porcupine Tree', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Dream Theater', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Dream Theater', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Marillion', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Marillion', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:King Crimson', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:King Crimson', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'artist:Opeth', 'qtype': 'artist', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'artist:Opeth', 'qtype': 'artist', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:artist:7ai5TWiOG8g9Hds5AATS28'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:artist:7ai5TWiOG8g9Hds5AATS28'}
+[INFO] Tool called: SpotifySearch with arguments: {'query': 'Marillion Misplaced Childhood', 'qtype': 'album', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': 'Marillion Misplaced Childhood', 'qtype': 'album', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifySearch with arguments: {'query': "Marillion Script for a Jester's Tear", 'qtype': 'album', 'limit': '1'}
+[INFO] Performing search with arguments: {'query': "Marillion Script for a Jester's Tear", 'qtype': 'album', 'limit': '1'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Search completed successfully.
+[INFO] Tool called: SpotifyInfo with arguments: {'item_uri': 'spotify:album:4ypbMYkt1yQofBQTYk4G1U'}
+[INFO] Getting item info with arguments: {'item_uri': 'spotify:album:4ypbMYkt1yQofBQTYk4G1U'}
+[INFO] Tool called: SpotifyPlay with arguments: {'action': 'start', 'spotify_uri': 'spotify:album:4ypbMYkt1yQofBQTYk4G1U'}
+[INFO] Starting playback with arguments: {'action': 'start', 'spotify_uri': 'spotify:album:4ypbMYkt1yQofBQTYk4G1U'}
+[INFO] Auth check result: valid
+[INFO] No active device, assigning MacBook Pro de Christophe.
+[INFO] Starting playback for spotify_uri: spotify:album:4ypbMYkt1yQofBQTYk4G1U on {'id': '0ea7b3eb5a90d94b43684e53ed8da27af5c24d41', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'MacBook Pro de Christophe', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}
+[INFO] Starting playback of on {'id': '0ea7b3eb5a90d94b43684e53ed8da27af5c24d41', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'MacBook Pro de Christophe', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}: context_uri=spotify:album:4ypbMYkt1yQofBQTYk4G1U, uris=None
+[INFO] Playback result: None
+[INFO] Playback started successfully
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] ====== main() function exiting ======
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[DEBUG] Spotify client initialized successfully
+[DEBUG] ====== main() function started ======
+[DEBUG] Initializing stdio server
+[DEBUG] stdio server initialized: read_stream=read_stream (MemoryObjectReceiveStream): MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False), write_stream=write_stream (MemoryObjectSendStream): MemoryObjectSendStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=1, open_receive_channels=1, waiting_receivers=OrderedDict(), waiting_senders=OrderedDict()), _closed=False)
+[DEBUG] About to call server.run()
+[DEBUG] server.run() completed normally
+[DEBUG] stdio server context exited
+[DEBUG] ====== main() function exiting ======
+[DEBUG] Server initialized with options: options (InitializationOptions): InitializationOptions(server_name='spotify-mcp', server_version='1.3.0', capabilities=ServerCapabilities(experimental={}, logging=None, prompts=None, resources=None, tools=None), instructions=None)
+[DEBUG] Python version: 3.12.4 (main, Jul  2 2024, 10:34:54) [Clang 15.0.0 (clang-1500.3.9.4)]
+[DEBUG] Arguments: sys.argv (list): ['/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/.venv/bin/spotify-mcp']
+[DEBUG] Initializing Spotify client
+[INFO] Initializing Spotify client with logger
+[INFO] Auth check result: expired
+[ERROR] Failed to initialize Spotify client: list index out of range
+[EXCEPTION] Failed to initialize Spotify client: list index out of range
+Traceback (most recent call last):
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/server.py", line 91, in <module>
+    spotify_client = spotify_api.Client(global_logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 58, in __init__
+    self.username = self.get_username()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/utils.py", line 202, in wrapper
+    kwargs["device"] = self._get_candidate_device()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christophethibault/Flint/Flint_Projects/mcp_folder/spotify-mcp/src/spotify_mcp/spotify_api.py", line 303, in _get_candidate_device
+    self.logger.info(f"No active device, assigning {devices[0]['name']}.")
+                                                    ~~~~~~~^^^
+IndexError: list index out of range
+
